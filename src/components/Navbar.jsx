@@ -30,8 +30,6 @@ function Navbar() {
                     href="https://albertocastellanom.wixsite.com/alberto-castellano-m/research" 
                     className="nav-link" 
                     onClick={handleLinkClick}
-                    target="_blank" 
-                    rel="noopener noreferrer"
                 >
                     Research
                 </a>
@@ -39,8 +37,6 @@ function Navbar() {
                     href="https://albertocastellanom.wixsite.com/alberto-castellano-m/teaching" 
                     className="nav-link" 
                     onClick={handleLinkClick}
-                    target="_blank" 
-                    rel="noopener noreferrer"
                 >
                     Teaching
                 </a>
@@ -48,8 +44,6 @@ function Navbar() {
                     href="https://albertocastellanom.wixsite.com/alberto-castellano-m/scientific-outreach" 
                     className="nav-link" 
                     onClick={handleLinkClick}
-                    target="_blank" 
-                    rel="noopener noreferrer"
                 >
                     Scientific Outreach
                 </a>
@@ -57,8 +51,6 @@ function Navbar() {
                     href="https://albertocastellanom.wixsite.com/alberto-castellano-m/perks" 
                     className="nav-link" 
                     onClick={handleLinkClick}
-                    target="_blank" 
-                    rel="noopener noreferrer"
                 >
                     Perks
                 </a>
