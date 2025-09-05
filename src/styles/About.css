@@ -11,6 +11,7 @@
   gap: 40px;
   flex-wrap: wrap; /* optional, allows wrapping on small screens */
   padding: 50px;
+  padding-top: 30px;
 }
 .aboutme_left{
   flex: 1;                     /* take available space */
@@ -19,7 +20,7 @@
 .aboutme_title{
   font-size: 35px;
   font-weight: bold;
-  padding-bottom: 20px;
+  padding-bottom: 10px;
 }
 .aboutme_text{
   padding-bottom: 20px;

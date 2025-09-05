@@ -10,7 +10,7 @@ function About() {
     <div className="aboutme">
       <div className="aboutme_1">
         <div className="aboutme_left">
-          <div className="aboutme_title">About Me</div>
+          <h1 className="aboutme_title">About Me</h1>
           <div className="aboutme_text">
               ​I am a fellow at the Kadanoff Center for Theoretical Physics and an associate fellow at the Kavli Institute for Cosmological Physics (KICP). I completed my Ph.D. at the Institute for Theoretical Physics (IFT - UAM-CSIC) in Madrid under the supervision of Professor Luis Ibáñez. During my doctoral studies, I also spent three months as a visiting researcher at CERN.
               <br />

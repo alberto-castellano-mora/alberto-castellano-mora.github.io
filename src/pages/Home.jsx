@@ -13,7 +13,7 @@ function Home() {
             <img src={profile} alt="ProfilePic" className="profile" />
         </div>
         <div className="self_intro">
-            <div className="home_title">Alberto Castellano Mora, PhD</div>
+            <h1 className="home_title">Alberto Castellano Mora, PhD</h1>
             <div className="home_subtitle">Postdoctoral Researcher - EFI, Chicago</div>
             <ContactIcons />
             <div className="self_intro_text">

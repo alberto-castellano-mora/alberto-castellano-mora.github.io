@@ -65,11 +65,15 @@ with:
 - Add the images you'd like to assets and public folders.
 - Customize the style in files index.css and other .css inside styles folder.
 
+---
+
 ### 5. Install GitHub Pages
 
 ```bash
 npm install gh-pages
 ```
+
+---
 
 ### 6. Create a GitHub Repository
 
@@ -84,6 +88,8 @@ Example:
 ```lua
 alberto-castellano-mora.github.io
 ```
+
+---
 
 ### 7. Initialize & Push Your Code
 
@@ -100,6 +106,8 @@ git push -u origin main
 
 **Substitute the url with that of your project**
 
+---
+
 ### 8. Deploy to GitHub Pages
 
 Once you have pushed your code, run in your terminal:
@@ -109,6 +117,8 @@ npm run deploy
 ```
 
 Steps 7 and 8 should have pushed your code to main and created a second Branch called gh-pages. The gh-pages branch is automatically created by the deploy script (npm run deploy). That branch only contains the built static files (index.html, JS bundles, CSS, etc.) that GitHub Pages serves. **⚠️ Never manually edit or push to gh-pages**.
+
+---
 
 ### 9. View Your Site
 
@@ -121,6 +131,8 @@ Wait a few minutes to see your changes in *https://your-user-name.github.io/*
 1. Go to your github remote repository and click on **Settings**.
 2. On the left menu, click on Pages
 3. **Build and deployment** should be set to **Deploy from a branch** and the chosen branch should be **main**, not **None**.
+
+---
 
 ### 10. Updating Your Site
 
@@ -136,6 +148,42 @@ npm run deploy
 ## 📺 Extra Help
 
 [This tutorial](https://www.youtube.com/watch?v=hn1IkJk24ow) provides additional guidance.
+
+## 🧭 Let Google know your portfolio exists
+
+Now that you have your portfolio published, you might have tried accessing it from google search and failed. Here are some tips for making your portfolio discoverable and indexable.
+
+### 1. Make sure your site is indexable
+
+- In your React app, add proper meta tags in **index.html**:
+  - After adding the social media tags, you can test them in https://www.linkedin.com/post-inspector/ and https://cards-dev.x.com/validator
+- Add an <*h1*> tag with your name on the homepage (e.g., <*h1*>Your Name</*h1*>). Google gives weight to this. (Already included in code)
+- Customize the following files in */public* folder.
+  - **404.html** which will sertve as a fallback.
+  - **robots.txt**
+  - **sitemap.xml** --> add here any extra sites you have created. This current portfolio only has the base and about pages.
+
+### 2. Submit your site to Google
+
+- Go to [Google Search Console](https://search.google.com/search-console/welcome) and add your portfolio URL (e.g., https://username.github.io/).
+
+- Verify ownership (easiest is the GitHub Pages DNS option or uploading an HTML verification file).
+
+- Once verified, request indexing of your homepage.
+
+### 3. Add a sitemap (optional but useful)
+
+Submit your customized sitemap.xml in the public/ folder to [Google Search Console](https://search.google.com/search-console/welcome).
+
+### 4. Improve discoverability
+
+- Add your portfolio link to your LinkedIn, Twitter, GitHub profile, and email signature. Google will find it faster if it sees backlinks.
+
+- Use your full name consistently across profiles so your site ranks when people search for it.
+
+### 5. Be patient
+
+Google might take a few days to a few weeks to show your site for your name, depending on competition and how unique your name is.
 
 ## 📜 License
 
