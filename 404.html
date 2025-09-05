@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Redirecting...</title>
+    <meta name="robots" content="noindex, nofollow" />
+    <meta http-equiv="refresh" content="0; url=https://alberto-castellano-mora.github.io/" />
+    <script type="text/javascript">
+      // Capture the current path + query + hash
+      const redirectTo = "https://alberto-castellano-mora.github.io" + 
+        window.location.pathname + 
+        window.location.search + 
+        window.location.hash;
+
+      // Perform the redirect
+      window.location.replace(redirectTo);
+    </script>
+  </head>
+  <body>
+    <p>Redirecting to <a id="link" href="https://alberto-castellano-mora.github.io/">home page</a>…</p>
+    <script>
+      // Update link dynamically in case JS is disabled
+      document.getElementById("link").href = redirectTo;
+    </script>
+  </body>
+</html>
