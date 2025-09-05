@@ -165,11 +165,27 @@ Now that you have your portfolio published, you might have tried accessing it fr
 
 ### 2. Submit your site to Google
 
-- Go to [Google Search Console](https://search.google.com/search-console/welcome) and add your portfolio URL (e.g., https://username.github.io/).
+- Go to [Google Search Console](https://search.google.com/search-console/welcome)
+- Choose “URL prefix” and enter your full site URL (include the trailing slash): *https://username.github.io/*
 
-- Verify ownership (easiest is the GitHub Pages DNS option or uploading an HTML verification file).
+- Verify ownership using the HTML <*meta*> tag method (easiest method for GitHub Pages)
+  - Google gives you a <meta name="google-site-verification" ...> tag. Copy it.
+  - Replace this line inside your **index.html** file with your tag:
 
-- Once verified, request indexing of your homepage.
+```html
+<meta name="google-site-verification" content="efGeEOG95PK5m7aZDIhw5EBBgLPHeENKbXR6BilhkUI" />
+```
+
+- Push changes (this tag is not secret) and deploy again.
+
+```bash
+git add .
+git commit -m "add verification tag"
+git push
+npm run deploy
+```
+
+- Then click Verify in Search Console.
 
 ### 3. Add a sitemap (optional but useful)
 
