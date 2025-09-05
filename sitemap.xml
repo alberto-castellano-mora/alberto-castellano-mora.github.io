@@ -9,7 +9,7 @@
 
   <!-- Example internal routes (adjust to your React app’s routes) -->
   <url>
-    <loc>https://alberto-castellano-mora.github.io/#/about</loc>
+    <loc>https://alberto-castellano-mora.github.io/about</loc>
     <lastmod>2025-09-05</lastmod>
     <priority>0.8</priority>
   </url>
