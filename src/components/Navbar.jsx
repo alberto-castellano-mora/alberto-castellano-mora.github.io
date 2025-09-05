@@ -5,6 +5,10 @@ import "../styles/Navbar.css";
 function Navbar() {
     const [menuOpen, setMenuOpen] = useState(false);
 
+    const handleLinkClick = () => {
+        setMenuOpen(false);
+    };
+
     return (
         <nav className="navbar">
             <div className="navbar-left">
@@ -20,24 +24,45 @@ function Navbar() {
             </button>
 
             <div className={`navbar-right ${menuOpen ? "open" : ""}`}>
-                <Link to="/" className="nav-link">Home</Link>
-                <Link to="/about" className="nav-link">About Me</Link>
-                <Link to="https://albertocastellanom.wixsite.com/alberto-castellano-m/research" className="nav-link">
+                <Link to="/" className="nav-link" onClick={handleLinkClick}>Home</Link>
+                <Link to="/about" className="nav-link" onClick={handleLinkClick}>About Me</Link>
+                <a 
+                    href="https://albertocastellanom.wixsite.com/alberto-castellano-m/research" 
+                    className="nav-link" 
+                    onClick={handleLinkClick}
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                >
                     Research
-                </Link>
-                <Link to="https://albertocastellanom.wixsite.com/alberto-castellano-m/teaching" className="nav-link">
+                </a>
+                <a 
+                    href="https://albertocastellanom.wixsite.com/alberto-castellano-m/teaching" 
+                    className="nav-link" 
+                    onClick={handleLinkClick}
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                >
                     Teaching
-                </Link>
-                <Link to="https://albertocastellanom.wixsite.com/alberto-castellano-m/scientific-outreach" className="nav-link">
+                </a>
+                <a 
+                    href="https://albertocastellanom.wixsite.com/alberto-castellano-m/scientific-outreach" 
+                    className="nav-link" 
+                    onClick={handleLinkClick}
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                >
                     Scientific Outreach
-                </Link>
-                <Link to="https://albertocastellanom.wixsite.com/alberto-castellano-m/perks" className="nav-link">
+                </a>
+                <a 
+                    href="https://albertocastellanom.wixsite.com/alberto-castellano-m/perks" 
+                    className="nav-link" 
+                    onClick={handleLinkClick}
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                >
                     Perks
-                </Link>
+                </a>
             </div>
-
-            
-
         </nav>
     );
 }
