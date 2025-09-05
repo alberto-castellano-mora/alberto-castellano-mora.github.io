@@ -197,6 +197,7 @@ Submit your customized sitemap.xml in the public/ folder to [Google Search Conso
 - In the left menu, click “Sitemaps”.
 - Under “Add a new sitemap”, enter: "*sitemap.xml*", (Google will automatically resolve it as https://alberto-castellano-mora.github.io/sitemap.xml).
 - Hit Submit. Google will start crawling it. You can check status later.
+- ⚠️ Google sometimes reports “could not be read” if the sitemap was recently updated. Wait a few hours and refresh the submission page.
 
 ### 4. Improve discoverability
 
