@@ -156,7 +156,7 @@ Now that you have your portfolio published, you might have tried accessing it fr
 ### 1. Make sure your site is indexable
 
 - In your React app, add proper meta tags in **index.html**:
-  - After adding the social media tags, you can test them in https://www.linkedin.com/post-inspector/ and https://cards-dev.x.com/validator
+  - After adding the social media tags, you can test them in https://www.linkedin.com/post-inspector/ or in the tweet composer in https://x.com/
 - Add an <*h1*> tag with your name on the homepage (e.g., <*h1*>Your Name</*h1*>). Google gives weight to this. (Already included in code)
 - Customize the following files in */public* folder.
   - **404.html** which will sertve as a fallback.
@@ -168,7 +168,7 @@ Now that you have your portfolio published, you might have tried accessing it fr
 - Go to [Google Search Console](https://search.google.com/search-console/welcome)
 - Choose “URL prefix” and enter your full site URL (include the trailing slash): *https://username.github.io/*
 
-- Verify ownership using the HTML <*meta*> tag method (easiest method for GitHub Pages)
+- Verify ownership using the HTML <*meta*> tag method (easiest method for GitHub Pages, uploading an HTML file will not work)
   - Google gives you a <meta name="google-site-verification" ...> tag. Copy it.
   - Replace this line inside your **index.html** file with your tag:
 
@@ -187,9 +187,16 @@ npm run deploy
 
 - Then click Verify in Search Console.
 
-### 3. Add a sitemap (optional but useful)
+- ⚠️ Do not remove this verification tag from your html. Aditionally, it is recommended to add multiple verifications. Take a look at *Settings>Property verification*
+
+### 3. Submit your sitemap
 
 Submit your customized sitemap.xml in the public/ folder to [Google Search Console](https://search.google.com/search-console/welcome).
+
+- In Search Console, select your verified property (i.e. *alberto-castellano-mora.github.io*).
+- In the left menu, click “Sitemaps”.
+- Under “Add a new sitemap”, enter: "*sitemap.xml*", (Google will automatically resolve it as https://alberto-castellano-mora.github.io/sitemap.xml).
+- Hit Submit. Google will start crawling it. You can check status later.
 
 ### 4. Improve discoverability
 
