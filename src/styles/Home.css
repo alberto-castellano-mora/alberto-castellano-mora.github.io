@@ -1,0 +1,65 @@
+.home{
+  font-size: 15px;
+  font-weight: normal;
+  text-align: center;
+}
+.image-container {
+  position: relative; /* Make this container the reference point */
+  width: 100%;
+  height: 450px;
+  overflow: hidden; /* hide excess parts of image */
+}
+.cover_img {
+  width: 100%;
+  height: 70%;
+  object-fit: cover;
+  transform: scale(1.3);
+  transform-origin: center center;
+  filter: blur(0px);
+}
+.profile {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: auto;
+  height: 400px;
+}
+.self_intro{
+  margin: auto auto;
+  width: 600px;
+  align-items: center;
+  padding-top: 10px;
+  padding-bottom: 50px;
+}
+.home_title{
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+}
+.home_subtitle{
+  font-size: 20px;
+  font-weight: lighter;
+  font-style: italic;
+  text-align: center;
+}
+.self_intro_text{
+  text-align: left;
+  padding: 10px 15px 20px 15px;
+  margin: 0 20px;
+}
+.button_home{
+  display: inline-block;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+.button_link {
+  text-decoration: none;
+  color: inherit;   /* makes the link inherit the button text color */
+}
+.button_link:hover {
+  color: #ecddfb;
+  background-color: rgb(103, 58, 183);
+  text-decoration: none;
+}

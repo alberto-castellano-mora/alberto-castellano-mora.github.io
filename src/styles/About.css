@@ -1,0 +1,128 @@
+.aboutme{
+  font-size: 15px;
+  font-weight: normal;
+  text-align: left;
+  flex-wrap: wrap; /* allow wrapping */
+}
+.aboutme_1 {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 40px;
+  flex-wrap: wrap; /* optional, allows wrapping on small screens */
+  padding: 50px;
+}
+.aboutme_left{
+  flex: 1;                     /* take available space */
+  min-width: 280px; /* prevent text from shrinking too much */
+}
+.aboutme_title{
+  font-size: 35px;
+  font-weight: bold;
+  padding-bottom: 20px;
+}
+.aboutme_text{
+  padding-bottom: 20px;
+  max-width: 600px;            /* keep text column readable */
+}
+.aboutme_right {
+  flex: 0 0 300px;             /* fixed width column for the image */
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+.pic_at_cern {
+  max-width: 90%;
+  height: auto;
+}
+.researchpos{
+  background: rgb(245, 245, 245);
+  padding: 50px;
+  margin: 10px;
+  border-radius: 10px;  /* rounded edges */
+}
+.respos-title {
+  font-size: 30px;
+  font-weight: bold;
+  color: rgb(103, 58, 183);
+}
+.respos1 {
+  display: flex;
+  align-items: center; /* vertically center children */
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap; /* optional, allows wrapping on small screens */
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.respos1-left {
+  text-align: left;
+  max-width: 200px; /* prevents text from stretching too wide on large screens */
+  margin-bottom: 2px; /* space for mobile wrapping */
+}
+.respos1-date{
+  font-style: italic;
+  font-weight: lighter;
+}
+.respos1-title{
+  font-weight: bold;
+}
+.respos1-mid{
+  text-align: left;
+  max-width: 500px; /* prevents text from stretching too wide on large screens */
+  margin-bottom: 2px; /* space for mobile wrapping */
+}
+.respos1-right{
+  flex: 0 0 120px;            /* image column keeps its natural width */
+  display: flex;
+  justify-content: center; /* horizontal centering inside this column */
+  align-items: center;
+}
+.uchilogo2 {
+  max-width: 100%;
+}
+.education{
+  background: rgb(255, 247, 247);
+  padding: 50px;
+  margin: 10px;
+  border-radius: 10px; /* rounded edges */
+}
+.iftlogo {
+  max-width: 100%;
+}
+.cambridgelogo {
+  max-width: 100%;
+}
+.uamlogo {
+  max-width: 100%;
+}
+.grants{
+  background: rgb(245, 245, 245);
+  text-align: left;
+  padding: 50px;
+  margin: 10px;
+  border-radius: 10px; /* rounded edges */
+}
+.grants-text{
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+/* --------- Responsive Layout (Mobile) --------- */
+@media (max-width: 768px) {
+  .aboutme {
+    flex-direction: column;     /* stack text + image */
+    padding: 20px;              /* reduce padding */
+    gap: 20px;
+  }
+  .aboutme_left, 
+  .aboutme_right {
+    flex: 1 1 100%;             /* each takes full width */
+  }
+  .aboutme_text {
+    max-width: 100%;            /* let text stretch */
+  }
+  .aboutme_title {
+    font-size: 24px;            /* slightly smaller title */
+  }
+}

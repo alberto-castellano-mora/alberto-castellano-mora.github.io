@@ -1,0 +1,9 @@
+.contact{
+  margin: 10px 0; /* adds space above and below */
+}
+.iconlink{
+  width: 25px;
+  height: auto;
+  margin: 0 5px;
+  vertical-align: middle;
+}

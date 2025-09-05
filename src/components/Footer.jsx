@@ -1,4 +1,5 @@
 import React from "react";
+import "../styles/Footer.css";
 import f_logo from "../assets/uchicagologo.png";
 import ContactIcons from "./Contacticons.jsx";
 
@@ -19,7 +20,7 @@ function Footer() {
         </div>
 
         <div className="footer-low">
-            © {new Date().getFullYear()} Powered by T. Lobo 
+            © {new Date().getFullYear()} Powered by T. Lobo for Alberto Castellano Mora
         </div>
     </foot>
   );

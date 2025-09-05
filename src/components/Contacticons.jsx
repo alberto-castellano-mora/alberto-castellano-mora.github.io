@@ -2,6 +2,7 @@ import React from "react";
 import inspire from "../assets/inspire-icon.jpg";
 import ytb from "../assets/youtubered-icon.png";
 import email from "../assets/email-icon.png";
+import "../styles/ContactIcons.css";
 
 function ContactIcons() {
   return (
@@ -12,7 +13,7 @@ function ContactIcons() {
         <a href="https://www.youtube.com/@albertocastellano97" target="_blank" rel="noopener noreferrer">
             <img src={ytb} alt="Youtube" className="iconlink" />
         </a>
-        <a href="alberto.castellano.mora@gmail.com" target="_blank" rel="noopener noreferrer">
+        <a href="mailto:alberto.castellano.mora@gmail.com" target="_blank" rel="noopener noreferrer">
             <img src={email} alt="Email" className="iconlink" />
         </a>
     </div>

@@ -1,4 +1,5 @@
 import React from "react";
+import "../styles/Home.css";
 import { Link } from "react-router-dom";
 import profile from "../assets/profile.jpg";
 import cover_img from "../assets/home-cover.jpg";
@@ -12,7 +13,7 @@ function Home() {
             <img src={profile} alt="ProfilePic" className="profile" />
         </div>
         <div className="self_intro">
-            <div className="home_title">Alberto Castellano, PhD</div>
+            <div className="home_title">Alberto Castellano Mora, PhD</div>
             <div className="home_subtitle">Postdoctoral Researcher - EFI, Chicago</div>
             <ContactIcons />
             <div className="self_intro_text">
