@@ -1,0 +1,89 @@
+.ResearchIn{
+    margin:0;
+    padding: 0px;
+}
+.ResearchIn_1{
+    position: relative; /* Make this container the reference point */
+    width: 100%;
+    height: 100%;
+    overflow: hidden; /* hide excess parts of image */
+    margin-bottom: 0;
+}
+.rcover_img{
+    width: 100%;
+    height: 100%;
+    max-height: 800px;
+    object-fit: cover;
+    transform: scale(1.2);
+    transform-origin: center center;
+}
+.research_interests{
+    position: absolute;
+    display: flex;           /* stack children easily */
+    flex-direction: column;  /* one under the other */
+    align-items: center;    /* center children horizontally */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    width: 60%;
+}
+.RI_title{
+    font-size: 28px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 35px;
+}
+.RI_text{
+    text-align: left;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.blackhole{
+    width: 30%;
+    align-items: center;
+    margin-bottom: 25px;
+}
+.SeminarTalks{
+    background: rgb(245, 245, 245);
+    text-align: left;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    padding: 25px 50px 25px 50px;
+}
+.ST_title{
+    font-size: 28px;
+    font-weight: bold;
+    color: rgb(103, 58, 183);
+}
+
+.ST_component {
+    display: flex;
+    align-items: center; /* vertically center children */
+    justify-content: space-between;
+    gap: 10px;
+    flex-wrap: wrap; /* optional, allows wrapping on small screens */
+    margin: 30px;
+    
+}
+.ST_text{
+    text-align: left;
+    font-weight: normal;
+}
+.ST_video{
+    width: 35%;
+    height: auto;
+}
+.ST_final_component{
+    text-align: center;
+    color: rgb(103, 58, 183);
+    font-size: 18px;
+    font-style: italic;
+    align-items: center;    /* center children horizontally */
+}
+.button_research{
+    margin: 15px 0 15px 0;
+}
+

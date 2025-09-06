@@ -26,13 +26,8 @@ function Navbar() {
             <div className={`navbar-right ${menuOpen ? "open" : ""}`}>
                 <Link to="/" className="nav-link" onClick={handleLinkClick}>Home</Link>
                 <Link to="/about" className="nav-link" onClick={handleLinkClick}>About Me</Link>
-                <a 
-                    href="https://albertocastellanom.wixsite.com/alberto-castellano-m/research" 
-                    className="nav-link" 
-                    onClick={handleLinkClick}
-                >
-                    Research
-                </a>
+                <Link to="/research" className="nav-link" onClick={handleLinkClick}>Research</Link>
+
                 <a 
                     href="https://albertocastellanom.wixsite.com/alberto-castellano-m/teaching" 
                     className="nav-link" 

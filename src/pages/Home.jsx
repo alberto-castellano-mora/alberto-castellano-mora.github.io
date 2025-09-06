@@ -17,10 +17,13 @@ function Home() {
             <div className="home_subtitle">Postdoctoral Researcher - EFI, Chicago</div>
             <ContactIcons />
             <div className="self_intro_text">
-                Hello there! I am Alberto, a theoretical physicist currently based in Chicago, United States, where I work at the Enrico Fermi Institute (University of Chicago).
+                Hello there! I am Alberto, a theoretical physicist currently based in 
+                Chicago, United States, where I work at the Enrico Fermi Institute 
+                (University of Chicago).
                 <br />
                 <br />
-                In this website you will find some information about my research, education, and contact details.
+                In this website you will find some information about my research, 
+                education, and contact details.
                 <br />
                 <br />
                 I hope you find it useful!
