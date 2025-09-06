@@ -12,11 +12,12 @@
 .rcover_img{
     width: 100%;
     height: 100%;
-    max-height: 700px;
+    max-height: 750px;
     object-fit: cover;
     transform: scale(1.2);
     transform-origin: center center;
 }
+
 .research_interests{
     position: absolute;
     display: flex;           /* stack children easily */
@@ -28,62 +29,127 @@
     background-color: white;
     width: 60%;
 }
+
 .RI_title{
-    font-size: 28px;
+    font-size: 2rem;
     font-weight: bold;
     text-align: center;
-    margin-top: 35px;
+    margin: 35px 0px;
 }
+
 .RI_text{
+    font-size: 1rem;
     text-align: left;
-    margin-left: 50px;
-    margin-right: 50px;
+    margin: 0 50px 0px 50px;
 }
 
 .blackhole{
     width: 25%;
-    align-items: center;
-    margin-bottom: 20px;
+    max-width: 250px;
+    margin: 20px auto;
 }
+
 .SeminarTalks{
     background: rgb(245, 245, 245);
     text-align: left;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin: 10px 0;
     border-radius: 10px;
-    padding: 25px 50px 25px 50px;
+    padding: 25px 50px;
 }
+
 .ST_title{
-    font-size: 28px;
+    font-size: 2rem;
     font-weight: bold;
     color: rgb(103, 58, 183);
+    margin-bottom: 20px;
 }
 
 .ST_component {
     display: flex;
     align-items: center; /* vertically center children */
     justify-content: space-between;
-    gap: 10px;
+    gap: 20px;
     flex-wrap: wrap; /* optional, allows wrapping on small screens */
     margin: 30px;
-    
 }
 .ST_text{
+    flex: 1;
+    min-width: 250px;
     text-align: left;
     font-weight: normal;
 }
 .ST_video{
-    width: 35%;
-    height: auto;
+    flex: 1;
+    min-width: 280px;
+    max-width: 400px;
+    aspect-ratio: 16 / 9;
+    border: none;
+    border-radius: 8px;
 }
+
 .ST_final_component{
     text-align: center;
     color: rgb(103, 58, 183);
-    font-size: 18px;
+    font-size: 1rem;
     font-style: italic;
-    align-items: center;    /* center children horizontally */
-}
-.button_research{
-    margin: 15px 0 15px 0;
+    margin-top: 20px;
 }
 
+.button_research{
+    margin: 15px 0;
+}
+
+/* ---------------- RESPONSIVENESS ---------------- */
+
+@media (max-width: 1024px) {
+  .research_interests {
+    width: 80%;
+  }
+}
+
+@media (max-width: 768px) {
+  .research_interests {
+    position: static;
+    transform: none;
+    width: 90%;
+    margin: 20px auto;
+  }
+
+  .rcover_img {
+    max-height: 400px;
+    transform: none;
+  }
+
+  .RI_title {
+    font-size: 1.5rem;
+  }
+
+  .blackhole {
+    width: 50%;
+  }
+
+  .ST_component {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .ST_video {
+    width: 100%;
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .RI_text {
+    margin: 0 10px;
+    font-size: 0.9rem;
+  }
+
+  .ST_title {
+    font-size: 1.5rem;
+  }
+
+  .ST_text {
+    font-size: 0.9rem;
+  }
+}
