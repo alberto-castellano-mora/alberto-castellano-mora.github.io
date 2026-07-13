@@ -7,9 +7,11 @@ function ResearchIn() {
   return (
     <div className="ResearchIn">
         <div className="ResearchIn_1">
-            <img src={rcover_img} alt="CoverImg" className="rcover_img" />
+            <div className="rcover_img_wrapper">
+                <img src={rcover_img} alt="CoverImg" className="rcover_img" />
+            </div>
             <div className="research_interests">
-                <h1 className="RI_title">Reseatch Interests</h1>
+                <h1 className="RI_title">Research Interests</h1>
                 <div className="RI_text">
                     My research lies at the intersection between <u>Quantum 
                     Gravity, String Theory and Particle Physics</u>.
@@ -46,13 +48,13 @@ function ResearchIn() {
         </div>
         <div className="SeminarTalks">
             <h1 className="ST_title">Seminar and Talks</h1>
-            <b className="ST_text">
-                In this section you will find a selection of recorded talks. You 
-                can find the resto of recorded talks in my {' '}
-                    <a href="https://www.youtube.com/@albertocastellano97" target="_blank" rel="noopener noreferrer">
-                        YouTube page
-                    </a>.
-            </b>
+            <p className="ST_intro">
+                In this section you will find a selection of recorded talks. You
+                can find the rest of recorded talks in my {' '}
+                <a href="https://www.youtube.com/@albertocastellano97" target="_blank" rel="noopener noreferrer">
+                    YouTube page
+                </a>.
+            </p>
             <div className="ST_component">
                 <div className="ST_text">
                     <em>Nov 2023</em>
@@ -63,7 +65,6 @@ function ResearchIn() {
                 </div>
                 <iframe className="ST_video"
                 src="https://www.youtube.com/embed/aVO3kLqwXAw?si=pU0dGCMUYibdnJ_3"
-                frameborder="0" 
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 referrerpolicy="strict-origin-when-cross-origin"
                 allowfullscreen
@@ -80,7 +81,6 @@ function ResearchIn() {
                 </div>
                 <iframe className="ST_video"
                 src="https://www.youtube.com/embed/6eV5i4HZBvY?si=KKZ7Zd5CmCcUtjLy"
-                frameborder="0" 
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 referrerpolicy="strict-origin-when-cross-origin"
                 allowfullscreen
@@ -97,7 +97,6 @@ function ResearchIn() {
                 </div>
                 <iframe className="ST_video"
                 src="https://www.youtube.com/embed/6Ox3NHDb_CI?si=TZCnBJufjha_tK0S"
-                frameborder="0" 
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 referrerpolicy="strict-origin-when-cross-origin"
                 allowfullscreen
@@ -111,7 +110,7 @@ function ResearchIn() {
 
                 <button className="button_research">
                     <a
-                        href="/Alberto-CV-Sept-2025.pdf"
+                        href="/Alberto-CV-July-2026.pdf"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="button_link"

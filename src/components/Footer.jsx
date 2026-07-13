@@ -5,7 +5,7 @@ import ContactIcons from "./Contacticons.jsx";
 
 function Footer() {
   return (
-    <foot className="footer">
+    <footer className="footer">
         <div className="footer-up">
             <div className="footer-left">
                 <div className="footer-title">Contact Information</div>
@@ -20,9 +20,9 @@ function Footer() {
         </div>
 
         <div className="footer-low">
-            © {new Date().getFullYear()} Powered by T. Lobo for Alberto Castellano Mora
+            © {new Date().getFullYear()} Powered by T. Lobo
         </div>
-    </foot>
+    </footer>
   );
 }
 

@@ -5,6 +5,24 @@ function AwardsAndGrants() {
   return (
     <div className="grants">
         <div className="respos-title">Academic Awards and Grants</div>
+
+        <div className="grants-text">
+            <strong>Kadanoff Fellowship</strong> - 2024-2026
+            <br /> 
+            Awarded the Kadanoff Fellowship (highly competitive postdoctoral position at 
+            international level, granted by a committee of experts) supported by the 
+            Enrico Fermi Institute and the Kadanoff Center for Theoretical Physics at the 
+            University of Chicago. 
+        </div>
+
+        <div className="grants-text">
+            <strong>Premio Tesis Relevante (Outstanding PhD Thesis Award) </strong> - 2025
+            <br /> 
+            Recognition awarded by the Spanish National Research Council (CSIC) for the 
+            quality and relevance of PhD thesis through a competitive national 
+            selection process.
+        </div>
+
         <div className="grants-text">
             <strong>Residencia de Estudiantes del CSIC grant</strong> - 2022-2023
             <br /> 

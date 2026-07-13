@@ -37,8 +37,10 @@ Rename the folder if you’d like, e.g. your-name-portfolio.
 
 ### 3. Start your Build Process
 
+In command prompt:
+
 ```bash
-npm run dev
+npm run dev --host
 ```
 
 Your app will be served locally at *http://localhost:xxxx*.
@@ -58,10 +60,10 @@ Here are the most important parts:
 with:
 
 ``` json
-"homepage": "https://your-user-name.github.io/",
+"homepage": "https://your-username.github.io/",
 ```
 
-- Change Alberto's name and experiences to your own.
+- Change Alberto's name and experiences to your own (I recommend searching for the words "Alberto Castellano Mora" or "alberto-castellano-mora" and replacing it with your name).
 - Add the images you'd like to assets and public folders.
 - Customize the style in files index.css and other .css inside styles folder.
 
@@ -122,7 +124,7 @@ Steps 7 and 8 should have pushed your code to main and created a second Branch c
 
 ### 9. View Your Site
 
-Wait a few minutes to see your changes in *https://your-user-name.github.io/*
+Wait a few minutes to see your changes in *https://your-username.github.io/*
 
 ⏳ Changes may take a few minutes to appear. If you still see a 404 after ~5 minutes, try redeploying.
 
@@ -166,7 +168,7 @@ Now that you have your portfolio published, you might have tried accessing it fr
 ### 2. Submit your site to Google
 
 - Go to [Google Search Console](https://search.google.com/search-console/welcome)
-- Choose “URL prefix” and enter your full site URL (include the trailing slash): *https://username.github.io/*
+- Choose “URL prefix” and enter your full site URL (include the trailing slash): *https://your-username.github.io/*
 
 - Verify ownership using the HTML <*meta*> tag method (easiest method for GitHub Pages, uploading an HTML file will not work)
   - Google gives you a <meta name="google-site-verification" ...> tag. Copy it.

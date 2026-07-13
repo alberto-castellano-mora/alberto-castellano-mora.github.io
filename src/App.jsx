@@ -5,6 +5,7 @@ import Footer from "./components/Footer.jsx";
 import Home from "./pages/Home.jsx";
 import About from "./pages/About.jsx";
 import Research from "./pages/Research.jsx";
+import Outreach from "./pages/Outreach.jsx";
 import './App.css';
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/research" element={<Research />} />
+          <Route path="/outreach" element={<Outreach />} />
         </Routes>
       </main>
       <Footer />

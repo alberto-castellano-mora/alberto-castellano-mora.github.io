@@ -18,7 +18,7 @@ function About() {
           </div>
           <button className="button_aboutme">
               <a
-                href="/Alberto-CV-Sept-2025.pdf"
+                href="/Alberto-CV-July-2026.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="button_link"

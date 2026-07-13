@@ -35,13 +35,9 @@ function Navbar() {
                 >
                     Teaching
                 </a>
-                <a 
-                    href="https://albertocastellanom.wixsite.com/alberto-castellano-m/scientific-outreach" 
-                    className="nav-link" 
-                    onClick={handleLinkClick}
-                >
+                <Link to="/outreach" className="nav-link" onClick={handleLinkClick}>
                     Scientific Outreach
-                </a>
+                </Link>
                 <a 
                     href="https://albertocastellanom.wixsite.com/alberto-castellano-m/perks" 
                     className="nav-link" 

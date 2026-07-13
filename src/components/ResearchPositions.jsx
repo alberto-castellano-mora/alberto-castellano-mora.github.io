@@ -8,7 +8,7 @@ function ResearchPositions() {
         <div className="respos-title">Research Positions</div>
         <div className="respos1">
             <div className="respos1-left">
-                <div className="respos1-date">2024-2027</div>
+                <div className="respos1-date">2024-Present</div>
                 <div className="respos1-title">Posdoctoral Researcher</div>
                 <div className="respos1-text">
                     EFI and KICP

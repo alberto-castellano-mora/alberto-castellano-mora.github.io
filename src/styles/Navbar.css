@@ -2,67 +2,97 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: rgb(103, 58, 183);
+  background: #673AB7;
   color: white;
-  font-size: 18px;
+  font-size: 16px;
+  padding: 0 40px;
+  height: 60px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.22);
 }
+
 .navbar-left {
-  font-weight: normal;
-  padding: 30px 0px 30px 30px;
+  font-weight: 600;
+  font-size: 1rem;
+  letter-spacing: 0.01em;
+  white-space: nowrap;
 }
+
 .navbar-right {
-  font-weight: normal;
-  padding: 30px 30px 30px 0px;
   display: flex;
-  gap: 12px;
+  align-items: center;
+  gap: 4px;
 }
+
 .nav-link {
-  padding: 0px 12px;
-  color: #fff;
+  padding: 6px 12px;
+  color: rgba(255, 255, 255, 0.88);
   text-decoration: none;
+  font-size: 0.85rem;
+  letter-spacing: 0.04em;
+  border-radius: 4px;
+  transition: background-color 0.2s ease, color 0.2s ease;
 }
+
 .nav-link:hover {
-  color: #ecddfb;
+  color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.18);
 }
+
 .menu-toggle {
   display: none;
   border: none;
   cursor: pointer;
-  font-size: 28px;
-  margin-right: 20px;
-  color: white; 
-  background-color: rgb(103, 58, 183);
+  font-size: 22px;
+  color: white;
+  background-color: transparent;
+  padding: 6px 10px;
+  border-radius: 4px;
+  transition: background-color 0.2s ease;
 }
 
+.menu-toggle:hover {
+  background-color: rgba(255, 255, 255, 0.18);
+}
 
 @media (max-width: 768px) {
+  .navbar {
+    height: auto;
+    padding: 0;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  .navbar-left {
+    flex: 1;
+    padding: 16px 20px;
+    font-size: 0.95rem;
+  }
   .menu-toggle {
     display: block;
+    margin-right: 12px;
   }
-  .navbar {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .navbar-left {
-    padding: 15px;
-    font-size: 16px;
-  }
-
   .navbar-right {
-    display: none;  /* hidden by default */
+    display: none;
     flex-direction: column;
-    width: 100%;
-    background: rgb(103, 58, 183);
-    padding: 10px 0;
+    align-items: stretch;
+    flex: 1 1 100%;
+    background: #5c34a4;
+    padding: 6px 0;
+    gap: 0;
   }
-
   .navbar-right.open {
-    display: flex ;
+    display: flex;
   }
-
   .nav-link {
-    padding: 12px;
-    display: block;
+    padding: 12px 20px;
+    font-size: 0.9rem;
+    border-radius: 0;
+    letter-spacing: 0.02em;
+    color: rgba(255, 255, 255, 0.9);
+  }
+  .nav-link:hover {
+    background-color: rgba(255, 255, 255, 0.12);
   }
 }

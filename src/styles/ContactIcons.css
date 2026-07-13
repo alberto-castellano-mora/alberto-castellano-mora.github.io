@@ -1,9 +1,21 @@
-.contact{
-  margin: 10px 0; /* adds space above and below */
+.contact {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  margin: 14px 0;
 }
-.iconlink{
-  width: 25px;
-  height: auto;
-  margin: 0 5px;
+
+.iconlink {
+  width: 30px;
+  height: 30px;
+  object-fit: contain;
+  margin: 0 4px;
   vertical-align: middle;
+  border-radius: 4px;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.iconlink:hover {
+  opacity: 0.72;
+  transform: scale(1.12);
 }

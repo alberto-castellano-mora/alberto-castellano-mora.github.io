@@ -1,102 +1,136 @@
-.ResearchIn{
-    margin:0;
-    padding: 0px;
-}
-.ResearchIn_1{
-    position: relative; /* Make this container the reference point */
-    width: 100%;
-    height: 100%;
-    overflow: hidden; /* hide excess parts of image */
-    margin-bottom: 0;
-}
-.rcover_img{
-    width: 100%;
-    height: 100%;
-    max-height: 750px;
-    object-fit: cover;
-    transform: scale(1.2);
-    transform-origin: center center;
+.ResearchIn {
+  margin: 0;
+  padding: 0;
 }
 
-.research_interests{
-    position: absolute;
-    display: flex;           /* stack children easily */
-    flex-direction: column;  /* one under the other */
-    align-items: center;    /* center children horizontally */
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: white;
-    width: 60%;
+/* ---------- Hero: cover image + overlapping card ----------
+   Image wrapper has a fixed small height.
+   Card uses a negative top margin to sit over the image bottom edge.
+   overflow: hidden on the wrapper clips the scale(1.2) horizontal bleed.
+*/
+.ResearchIn_1 {
+  width: 100%;
 }
 
-.RI_title{
-    font-size: 2rem;
-    font-weight: bold;
-    text-align: center;
-    margin: 35px 0px;
+.rcover_img_wrapper {
+  width: 100%;
+  height: 320px;
+  overflow: visible;
 }
 
-.RI_text{
-    font-size: 1rem;
-    text-align: left;
-    margin: 0 50px 0px 50px;
+.rcover_img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: scale(1.2);
+  transform-origin: center center;
 }
 
-.blackhole{
-    width: 25%;
-    max-width: 250px;
-    margin: 20px auto;
+.research_interests {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  width: 60%;
+  border-radius: 10px;
+  box-shadow: 0 4px 32px rgba(0, 0, 0, 0.18);
+  margin: -290px auto 40px;
 }
 
-.SeminarTalks{
-    background: rgb(245, 245, 245);
-    text-align: left;
-    margin: 10px 0;
-    border-radius: 10px;
-    padding: 25px 50px;
+.RI_title {
+  font-size: 1.9rem;
+  font-weight: 700;
+  color: #673AB7;
+  text-align: center;
+  margin: 32px 0 20px;
+  padding-bottom: 12px;
+  border-bottom: 2px solid #d5c5f5;
+  display: inline-block;
 }
 
-.ST_title{
-    font-size: 2rem;
-    font-weight: bold;
-    color: rgb(103, 58, 183);
-    margin-bottom: 20px;
+.RI_text {
+  font-size: 1rem;
+  text-align: left;
+  margin: 0 50px 0 50px;
+  line-height: 1.75;
+  color: #3a3a3a;
+}
+
+.blackhole {
+  width: 25%;
+  max-width: 150px;
+  margin: 20px auto;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
+}
+
+/* ---------- Seminar Talks section ---------- */
+.SeminarTalks {
+  background: #f8f5ff;
+  text-align: left;
+  margin: 10px auto;
+  max-width: 1100px;
+  border-radius: 12px;
+  padding: 44px 50px;
+  box-shadow: 0 2px 14px rgba(103, 58, 183, 0.08);
+}
+
+.ST_title {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #673AB7;
+  padding-bottom: 12px;
+  border-bottom: 2px solid #d5c5f5;
+  margin-bottom: 8px;
+  display: block;
+  width: fit-content;
+}
+
+.ST_intro {
+  margin: 4px 0 16px;
+  line-height: 1.7;
+  color: #3a3a3a;
 }
 
 .ST_component {
-    display: flex;
-    align-items: center; /* vertically center children */
-    justify-content: space-between;
-    gap: 20px;
-    flex-wrap: wrap; /* optional, allows wrapping on small screens */
-    margin: 30px;
-}
-.ST_text{
-    flex: 1;
-    min-width: 250px;
-    text-align: left;
-    font-weight: normal;
-}
-.ST_video{
-    flex: 1;
-    min-width: 280px;
-    max-width: 400px;
-    aspect-ratio: 16 / 9;
-    border: none;
-    border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  flex-wrap: wrap;
+  padding: 20px 0;
+  border-bottom: 1px solid #eeebf7;
 }
 
-.ST_final_component{
-    text-align: center;
-    color: rgb(103, 58, 183);
-    font-size: 1rem;
-    font-style: italic;
-    margin-top: 20px;
+.ST_text {
+  flex: 1;
+  min-width: 250px;
+  text-align: left;
+  font-weight: normal;
+  line-height: 1.7;
 }
 
-.button_research{
-    margin: 15px 0;
+.ST_video {
+  flex: 1;
+  min-width: 280px;
+  max-width: 420px;
+  aspect-ratio: 16 / 9;
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.12);
+}
+
+.ST_final_component {
+  text-align: center;
+  color: #673AB7;
+  font-size: 1rem;
+  font-style: italic;
+  margin-top: 28px;
+}
+
+.button_research {
+  margin: 15px 0;
 }
 
 /* ---------------- RESPONSIVENESS ---------------- */
@@ -108,31 +142,33 @@
 }
 
 @media (max-width: 768px) {
+  .rcover_img_wrapper {
+    height: 220px;
+  }
   .research_interests {
-    position: static;
-    transform: none;
     width: 90%;
-    margin: 20px auto;
+    margin: -30px auto 20px;
+    box-shadow: 0 2px 16px rgba(0, 0, 0, 0.1);
   }
-
-  .rcover_img {
-    max-height: 400px;
-    transform: none;
-  }
-
   .RI_title {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
   }
-
+  .RI_text {
+    margin: 0 20px;
+  }
   .blackhole {
     width: 50%;
   }
-
+  .SeminarTalks {
+    padding: 28px 24px;
+    margin: 6px;
+  }
   .ST_component {
     flex-direction: column;
     align-items: flex-start;
+    margin: 0;
+    padding: 16px 0;
   }
-
   .ST_video {
     width: 100%;
     max-width: 100%;
@@ -144,12 +180,14 @@
     margin: 0 10px;
     font-size: 0.9rem;
   }
-
   .ST_title {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
   }
-
   .ST_text {
     font-size: 0.9rem;
+    min-width: 0;
+  }
+  .SeminarTalks {
+    padding: 20px 16px;
   }
 }

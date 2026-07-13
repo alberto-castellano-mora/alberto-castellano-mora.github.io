@@ -1,129 +1,206 @@
-.aboutme{
+.aboutme {
   font-size: 15px;
   font-weight: normal;
   text-align: left;
-  flex-wrap: wrap; /* allow wrapping */
 }
+
 .aboutme_1 {
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
   gap: 40px;
-  flex-wrap: wrap; /* optional, allows wrapping on small screens */
-  padding: 50px;
-  padding-top: 30px;
+  flex-wrap: wrap;
+  padding: 48px 50px 36px;
+  max-width: 1100px;
+  margin: 0 auto;
 }
-.aboutme_left{
-  flex: 1;                     /* take available space */
-  min-width: 280px; /* prevent text from shrinking too much */
+
+.aboutme_left {
+  flex: 1;
+  min-width: 280px;
 }
-.aboutme_title{
-  font-size: 35px;
-  font-weight: bold;
-  padding-bottom: 10px;
+
+.aboutme_title {
+  font-size: 2.1rem;
+  font-weight: 700;
+  color: #1a1a1a;
+  padding-bottom: 14px;
 }
-.aboutme_text{
-  padding-bottom: 20px;
-  max-width: 600px;            /* keep text column readable */
+
+.aboutme_text {
+  padding-bottom: 24px;
+  max-width: 600px;
+  line-height: 1.75;
+  color: #3a3a3a;
 }
+
 .aboutme_right {
-  flex: 0 0 300px;             /* fixed width column for the image */
+  flex: 0 0 280px;
   display: flex;
   justify-content: center;
   align-items: flex-start;
 }
+
 .pic_at_cern {
   max-width: 90%;
   height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.14);
 }
-.researchpos{
-  background: rgb(245, 245, 245);
-  padding: 50px;
-  margin: 10px;
-  border-radius: 10px;  /* rounded edges */
+
+/* ---------- Section cards ---------- */
+.researchpos {
+  background: #f8f5ff;
+  padding: 44px 50px;
+  margin: 10px auto;
+  max-width: 1100px;
+  border-radius: 12px;
+  box-shadow: 0 2px 14px rgba(103, 58, 183, 0.08);
 }
+
+.education {
+  background: #fff8f8;
+  padding: 44px 50px;
+  margin: 10px auto;
+  max-width: 1100px;
+  border-radius: 12px;
+  box-shadow: 0 2px 14px rgba(103, 58, 183, 0.06);
+}
+
+.grants {
+  background: #f8f5ff;
+  text-align: left;
+  padding: 44px 50px;
+  margin: 10px auto;
+  max-width: 1100px;
+  border-radius: 12px;
+  box-shadow: 0 2px 14px rgba(103, 58, 183, 0.08);
+}
+
+/* ---------- Section title with accent ---------- */
 .respos-title {
-  font-size: 30px;
-  font-weight: bold;
-  color: rgb(103, 58, 183);
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #673AB7;
+  padding-bottom: 12px;
+  border-bottom: 2px solid #d5c5f5;
+  margin-bottom: 8px;
+  display: inline-block;
 }
+
+/* ---------- Entry rows ---------- */
 .respos1 {
   display: flex;
-  align-items: center; /* vertically center children */
+  align-items: center;
   justify-content: space-between;
   gap: 20px;
-  flex-wrap: wrap; /* optional, allows wrapping on small screens */
-  padding-top: 15px;
-  padding-bottom: 15px;
+  flex-wrap: wrap;
+  padding: 18px 0;
+  border-bottom: 1px solid #eeebf7;
 }
+
+.respos1:last-of-type {
+  border-bottom: none;
+}
+
 .respos1-left {
   text-align: left;
-  max-width: 200px; /* prevents text from stretching too wide on large screens */
-  margin-bottom: 2px; /* space for mobile wrapping */
+  max-width: 200px;
 }
-.respos1-date{
+
+.respos1-date {
   font-style: italic;
-  font-weight: lighter;
+  font-weight: 400;
+  color: #777;
+  font-size: 0.9rem;
 }
-.respos1-title{
-  font-weight: bold;
+
+.respos1-title {
+  font-weight: 700;
+  color: #1a1a1a;
 }
-.respos1-mid{
+
+.respos1-mid {
   text-align: left;
-  max-width: 500px; /* prevents text from stretching too wide on large screens */
-  margin-bottom: 2px; /* space for mobile wrapping */
+  max-width: 500px;
+  line-height: 1.7;
 }
-.respos1-right{
-  flex: 0 0 120px;            /* image column keeps its natural width */
+
+.respos1-right {
+  flex: 0 0 120px;
   display: flex;
-  justify-content: center; /* horizontal centering inside this column */
+  justify-content: center;
   align-items: center;
 }
-.uchilogo2 {
-  max-width: 100%;
-}
-.education{
-  background: rgb(255, 247, 247);
-  padding: 50px;
-  margin: 10px;
-  border-radius: 10px; /* rounded edges */
-}
-.iftlogo {
-  max-width: 100%;
-}
-.cambridgelogo {
-  max-width: 100%;
-}
+
+.uchilogo2,
+.iftlogo,
+.cambridgelogo,
 .uamlogo {
   max-width: 100%;
 }
-.grants{
-  background: rgb(245, 245, 245);
-  text-align: left;
-  padding: 50px;
-  margin: 10px;
-  border-radius: 10px; /* rounded edges */
+
+/* ---------- Grants ---------- */
+.grants-text {
+  padding: 14px 0;
+  border-bottom: 1px solid #eeebf7;
+  line-height: 1.7;
 }
-.grants-text{
-  padding-top: 15px;
-  padding-bottom: 15px;
+
+.grants-text:last-of-type {
+  border-bottom: none;
 }
 
 /* --------- Responsive Layout (Mobile) --------- */
 @media (max-width: 768px) {
-  .aboutme {
-    flex-direction: column;     /* stack text + image */
-    padding: 20px;              /* reduce padding */
+  .aboutme_1 {
+    flex-direction: column;
+    padding: 24px 20px;
     gap: 20px;
   }
-  .aboutme_left, 
+  .aboutme_left {
+    flex: 1 1 100%;
+    min-width: 0;
+  }
   .aboutme_right {
-    flex: 1 1 100%;             /* each takes full width */
+    flex: 1 1 100%;
+    justify-content: center;
+  }
+  .pic_at_cern {
+    max-width: 240px;
   }
   .aboutme_text {
-    max-width: 100%;            /* let text stretch */
+    max-width: 100%;
   }
   .aboutme_title {
-    font-size: 24px;            /* slightly smaller title */
+    font-size: 1.6rem;
+  }
+
+  .researchpos,
+  .education,
+  .grants {
+    padding: 24px 20px;
+    margin: 6px;
+  }
+  .respos-title {
+    font-size: 1.3rem;
+  }
+
+  .respos1 {
+    gap: 10px;
+  }
+  .respos1-left {
+    flex: 1 1 auto;
+    max-width: none;
+    min-width: 0;
+  }
+  .respos1-right {
+    flex: 0 0 70px;
+    order: 2;
+  }
+  .respos1-mid {
+    flex: 1 1 100%;
+    max-width: 100%;
+    order: 3;
   }
 }

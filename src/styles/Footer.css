@@ -1,37 +1,47 @@
 .footer {
-  font-size: 15px;
-  background: rgb(103, 58, 183);
+  font-size: 14px;
+  background: #673AB7;
   color: white;
 }
+
 .footer-up {
-  padding: 30px 50px;
+  padding: 36px 50px;
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
-  background: rgb(103, 58, 183);
-  color: white;
+  align-items: center;
+  gap: 24px;
+  max-width: 1100px;
+  margin: 0 auto;
 }
-.footer-left{
+
+.footer-left {
   text-align: left;
-  max-width: 500px; /* prevents text from stretching too wide on large screens */
-  margin-bottom: 20px; /* space for mobile wrapping */
+  max-width: 420px;
+  line-height: 1.7;
 }
+
 .footer-title {
-  font-size: 22px;
-  font-weight: bold;
-  margin-bottom: 10px;
+  font-size: 1.1rem;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  margin-bottom: 12px;
+  text-transform: uppercase;
 }
+
 .f_logo {
-  width: 300px;
+  width: 260px;
   height: auto;
-  max-width: 100%; /* makes logo scale down on smaller screens */
+  max-width: 100%;
+  opacity: 0.92;
 }
+
 .footer-low {
-  color: rgb(103, 58, 183);
+  color: #673AB7;
   padding: 10px 0;
   text-align: center;
-  background: white; /* optional: makes it distinct from footer-up */
-  font-size: 14px;
+  background: white;
+  font-size: 13px;
+  letter-spacing: 0.02em;
 }
 
 /* --------- Responsive Layout (Mobile) --------- */
@@ -40,20 +50,16 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
-    padding: 20px 20px;
+    padding: 28px 20px;
+    gap: 20px;
   }
-
   .footer-left {
     max-width: 100%;
-    margin-bottom: 20px;
   }
-
   .f_logo {
-    width: 200px; /* smaller logo on mobile */
-    margin-bottom: 10px;
+    width: 180px;
   }
-
   .footer-title {
-    font-size: 20px;
+    font-size: 1rem;
   }
 }
