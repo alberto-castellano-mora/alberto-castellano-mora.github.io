@@ -1,0 +1,202 @@
+.outreach {
+  font-size: 15px;
+  font-weight: normal;
+  text-align: left;
+}
+
+/* --- Hero cover --- */
+.outreach-hero {
+  position: relative;
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+}
+
+.outreach-hero-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.outreach-hero-overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+  text-align: center;
+}
+
+.outreach-hero-card {
+  background: rgba(255, 255, 255, 0.92);
+  border-radius: 12px;
+  padding: 24px 32px;
+  max-width: 620px;
+  text-align: center;
+}
+
+.outreach-title {
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: #673AB7;
+  margin-bottom: 14px;
+}
+
+.outreach-intro-text {
+  line-height: 1.75;
+  color: #3a3a3a;
+}
+
+/* --- Activity entries --- */
+.outreach-entry {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  padding: 40px 50px;
+  margin: 10px auto;
+  max-width: 1100px;
+  border-radius: 12px;
+  background: #f8f5ff;
+  box-shadow: 0 2px 14px rgba(103, 58, 183, 0.08);
+}
+
+.outreach-entry-text {
+  flex: 1;
+  min-width: 0;
+}
+
+.outreach-entry-date {
+  font-style: italic;
+  font-weight: 400;
+  color: #777;
+  font-size: 0.9rem;
+  margin-bottom: 6px;
+}
+
+.outreach-entry-name {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #673AB7;
+  margin-bottom: 12px;
+}
+
+.outreach-entry-desc {
+  line-height: 1.75;
+  max-width: 500px;
+  color: #3a3a3a;
+}
+
+/* --- Visuals side --- */
+.outreach-entry-visuals {
+  display: flex;
+  gap: 16px;
+  flex-shrink: 0;
+}
+
+/* --- Image containers ---
+   Height matches the video (380px × 9/16 = 214px).
+   width: auto lets each image expand to its natural aspect ratio.
+*/
+.outreach-placeholder {
+  height: 214px;
+  max-width: 300px;
+  border-radius: 8px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.outreach-placeholder img {
+  height: 100%;
+  width: auto;
+  display: block;
+}
+
+/* --- Video container --- */
+.outreach-video-placeholder {
+  flex-shrink: 0;
+  width: 380px;
+  aspect-ratio: 16 / 9;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.12);
+}
+
+.outreach-video-placeholder iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+  display: block;
+}
+
+/* --- Responsive --- */
+@media (max-width: 1024px) {
+  /* Video shrinks to 300px wide → 169px tall; match images */
+  .outreach-placeholder {
+    height: 169px;
+  }
+  .outreach-video-placeholder {
+    width: 300px;
+  }
+}
+
+@media (max-width: 768px) {
+  .outreach-hero {
+    height: 220px;
+  }
+  .outreach-hero-overlay {
+    padding: 16px;
+  }
+  .outreach-hero-card {
+    padding: 16px 20px;
+  }
+  .outreach-title {
+    font-size: 1.7rem;
+  }
+  .outreach-entry {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 28px 20px;
+    margin: 6px;
+    gap: 20px;
+  }
+  .outreach-entry-desc {
+    max-width: 100%;
+  }
+  .outreach-entry-visuals {
+    width: 100%;
+    justify-content: center;
+  }
+  /* On mobile, go back to width-driven sizing to fill the available space */
+  .outreach-placeholder {
+    height: auto;
+    width: 45%;
+    max-width: 220px;
+  }
+  .outreach-placeholder img {
+    height: auto;
+    width: 100%;
+  }
+  .outreach-video-placeholder {
+    width: 100%;
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .outreach-hero {
+    height: 190px;
+  }
+  .outreach-title {
+    font-size: 1.4rem;
+  }
+  .outreach-entry-name {
+    font-size: 1.1rem;
+  }
+  .outreach-placeholder {
+    width: 100%;
+    max-width: 100%;
+  }
+}

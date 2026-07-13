@@ -2,7 +2,7 @@ import React from "react";
 import "../styles/Home.css";
 import { Link } from "react-router-dom";
 import profile from "../assets/profile.jpg";
-import cover_img from "../assets/home-cover.jpg";
+import cover_img from "../../public/home-cover.jpg";
 import ContactIcons from "../components/Contacticons.jsx";
 
 function Home() {  

@@ -1,7 +1,7 @@
 import React from "react";
 import "../styles/Research.css";
 import blackhole from "../assets/blackhole.jpg";
-import rcover_img from "../assets/home-cover.jpg";
+import rcover_img from "../../public/home-cover.jpg";
 
 function ResearchIn() {
   return (
