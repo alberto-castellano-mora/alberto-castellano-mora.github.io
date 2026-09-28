@@ -14,12 +14,12 @@ function Home() {
         </div>
         <div className="self_intro">
             <h1 className="home_title">Alberto Castellano Mora, PhD</h1>
-            <div className="home_subtitle">Postdoctoral Researcher - EFI, Chicago</div>
+            <div className="home_subtitle">Postdoctoral Researcher - Harvard University</div>
             <ContactIcons />
             <div className="self_intro_text">
                 Hello there! I am Alberto, a theoretical physicist currently based in 
-                Chicago, United States, where I work at the Enrico Fermi Institute 
-                (University of Chicago).
+                Cambridge, MA, United States, where I work at the Jefferson
+                Physical Laboratory at Harvard University.
                 <br />
                 <br />
                 In this website you will find some information about my research, 

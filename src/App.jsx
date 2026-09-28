@@ -1,16 +1,19 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar.jsx";
+import ScrollToTop from "./components/ScrollToTop.jsx";
 import Footer from "./components/Footer.jsx";
 import Home from "./pages/Home.jsx";
 import About from "./pages/About.jsx";
 import Research from "./pages/Research.jsx";
 import Outreach from "./pages/Outreach.jsx";
+import Perks from "./pages/Perks.jsx";
 import './App.css';
 
 function App() {
   return (
     <div className="app">
+      <ScrollToTop />
       <Navbar />
       <main>
         <Routes>
@@ -18,6 +21,7 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/research" element={<Research />} />
           <Route path="/outreach" element={<Outreach />} />
+          <Route path="/perks" element={<Perks />} />
         </Routes>
       </main>
       <Footer />

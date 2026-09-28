@@ -28,23 +28,19 @@ function Navbar() {
                 <Link to="/about" className="nav-link" onClick={handleLinkClick}>About Me</Link>
                 <Link to="/research" className="nav-link" onClick={handleLinkClick}>Research</Link>
 
-                <a 
-                    href="https://albertocastellanom.wixsite.com/alberto-castellano-m/teaching" 
-                    className="nav-link" 
+                {/* <a
+                    href="https://albertocastellanom.wixsite.com/alberto-castellano-m/teaching"
+                    className="nav-link"
                     onClick={handleLinkClick}
                 >
                     Teaching
-                </a>
+                </a> */}
                 <Link to="/outreach" className="nav-link" onClick={handleLinkClick}>
                     Scientific Outreach
                 </Link>
-                <a 
-                    href="https://albertocastellanom.wixsite.com/alberto-castellano-m/perks" 
-                    className="nav-link" 
-                    onClick={handleLinkClick}
-                >
+                <Link to="/perks" className="nav-link" onClick={handleLinkClick}>
                     Perks
-                </a>
+                </Link>
             </div>
         </nav>
     );

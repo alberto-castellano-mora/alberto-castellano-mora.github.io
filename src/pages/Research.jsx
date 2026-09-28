@@ -57,6 +57,23 @@ function ResearchIn() {
             </p>
             <div className="ST_component">
                 <div className="ST_text">
+                    <em>Apr 2025</em>
+                    <br />
+                    <strong>"Quantum-Corrected Black Hole Entropy and EFT Transitions"</strong>
+                    <br />
+                    Kadanoff seminar, University of Chicago.
+                </div>
+                <iframe className="ST_video"
+                src="https://www.youtube.com/embed/0PIxbVjEJ2M?si=oH2y46UdylImA7ZW"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+                ></iframe>
+
+            </div>
+            
+            <div className="ST_component">
+                <div className="ST_text">
                     <em>Nov 2023</em>
                     <br />
                     <strong>"A Universal Pattern in Quantum Gravity"</strong>
@@ -87,22 +104,6 @@ function ResearchIn() {
                 ></iframe>
             </div>
 
-            <div className="ST_component">
-                <div className="ST_text">
-                    <em>Feb 2022</em>
-                    <br />
-                    <strong>"IR/UV Mixing and the Swampland"</strong>
-                    <br />
-                    Invited Talk, (Online) Seminar Series on String Phenomenology.
-                </div>
-                <iframe className="ST_video"
-                src="https://www.youtube.com/embed/6Ox3NHDb_CI?si=TZCnBJufjha_tK0S"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                referrerpolicy="strict-origin-when-cross-origin"
-                allowfullscreen
-                ></iframe>
-            </div>
-
             <div className="ST_final_component">
                 You can find the complete list of talks and seminars 
                 (recorded and unrecorded) in my CV.
@@ -110,7 +111,7 @@ function ResearchIn() {
 
                 <button className="button_research">
                     <a
-                        href="/Alberto-CV-July-2026.pdf"
+                        href="/Alberto_Castellano_Mora_CV_sept2026.pdf"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="button_link"

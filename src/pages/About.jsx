@@ -12,13 +12,13 @@ function About() {
         <div className="aboutme_left">
           <h1 className="aboutme_title">About Me</h1>
           <div className="aboutme_text">
-              ​I am a fellow at the Kadanoff Center for Theoretical Physics and an associate fellow at the Kavli Institute for Cosmological Physics (KICP). I completed my Ph.D. at the Institute for Theoretical Physics (IFT - UAM-CSIC) in Madrid under the supervision of Professor Luis Ibáñez. During my doctoral studies, I also spent three months as a visiting researcher at CERN.
-              <br />
-              My work focuses on String Theory, String Phenomenology and Quantum Gravity. I am also interested in (supersymmetric) Quantum Field Theories, as well as the interplay between String Theory, Holography and Mathematics.
+            I am a postdoctoral researcher at the Jefferson Physical Laboratory at Harvard University. Previously, I was a fellow at the Kadanoff Center for Theoretical Physics and an associate fellow at the Kavli Institute for Cosmological Physics (KICP). I completed my Ph.D. at the Institute for Theoretical Physics (IFT - UAM-CSIC) in Madrid under the supervision of Professor Luis Ibáñez. During my doctoral studies, I also spent three months as a visiting researcher at CERN.
+            <br />
+            My work focuses on String Theory, String Phenomenology and Quantum Gravity. I am also interested in (supersymmetric) Quantum Field Theories, as well as the interplay between String Theory, Holography and Mathematics.
           </div>
           <button className="button_aboutme">
               <a
-                href="/Alberto-CV-July-2026.pdf"
+                href="/Alberto_Castellano_Mora_CV_sept2026.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="button_link"

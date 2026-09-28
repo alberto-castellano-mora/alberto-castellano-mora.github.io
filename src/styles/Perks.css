@@ -1,0 +1,141 @@
+.PerksPage {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+/* ---------- Cover image ---------- */
+.perks-cover-wrapper {
+  width: 100%;
+  height: 320px;
+  overflow: hidden;
+}
+
+.perks-cover-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: scale(1.2);
+  transform-origin: center center;
+}
+
+/* ---------- Intro card ---------- */
+.perks-intro-card {
+  position: relative;
+  z-index: 1;
+  background-color: white;
+  width: 60%;
+  border-radius: 10px;
+  box-shadow: 0 4px 32px rgba(0, 0, 0, 0.18);
+  margin: -160px auto 48px;
+  padding: 32px 48px 36px;
+  text-align: center;
+}
+
+.perks-title {
+  font-size: 1.9rem;
+  font-weight: 700;
+  color: #673AB7;
+  margin: 0 0 16px;
+  padding-bottom: 12px;
+  border-bottom: 2px solid #d5c5f5;
+  display: inline-block;
+}
+
+.perks-description {
+  font-size: 1rem;
+  line-height: 1.75;
+  color: #3a3a3a;
+  margin: 0;
+}
+
+/* ---------- Photo gallery ---------- */
+.perks-gallery {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 32px;
+  max-width: 1100px;
+  margin: 0 auto 60px;
+  padding: 0 24px;
+}
+
+.perks-photo-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.perks-photo-wrapper {
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(103, 58, 183, 0.12);
+}
+
+.perks-photo {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.perks-caption {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 4px 0;
+  margin-top: auto;
+}
+
+.perks-year {
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: #673AB7;
+  background: #ede8fb;
+  border-radius: 4px;
+  padding: 2px 8px;
+  white-space: nowrap;
+}
+
+.perks-caption-text {
+  font-size: 0.9rem;
+  color: #3a3a3a;
+  line-height: 1.4;
+}
+
+/* ---------- Responsiveness ---------- */
+@media (max-width: 1024px) {
+  .perks-intro-card {
+    width: 80%;
+  }
+}
+
+@media (max-width: 768px) {
+  .perks-cover-wrapper {
+    height: 220px;
+  }
+
+  .perks-intro-card {
+    width: 90%;
+    margin: -80px auto 32px;
+    padding: 24px 24px 28px;
+  }
+
+  .perks-title {
+    font-size: 1.4rem;
+  }
+
+  .perks-gallery {
+    grid-template-columns: 1fr;
+    gap: 24px;
+    padding: 0 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .perks-intro-card {
+    padding: 20px 16px 24px;
+  }
+
+  .perks-description {
+    font-size: 0.9rem;
+  }
+}

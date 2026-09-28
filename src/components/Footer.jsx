@@ -1,6 +1,6 @@
 import React from "react";
 import "../styles/Footer.css";
-import f_logo from "../assets/uchicagologo.png";
+import f_logo from "../assets/Harvard_University_footer.webp";
 import ContactIcons from "./Contacticons.jsx";
 
 function Footer() {
@@ -10,9 +10,9 @@ function Footer() {
             <div className="footer-left">
                 <div className="footer-title">Contact Information</div>
                 <br />
-                Kadanoff Center for Theoretical Physics
+                Jefferson Physical Laboratory <br /> Harvard University
                 <br /><br />
-                Fourth Floor <br /> 933 E 56th St. <br /> Chicago, IL, 60637
+                Office 456 <br /> 17 Oxford St. <br /> Cambridge, MA, 02138
                 <br />
                 <ContactIcons />
             </div>
